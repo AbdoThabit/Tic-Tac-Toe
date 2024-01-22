@@ -100,6 +100,7 @@
             GameScoresbtn.Text = "Game Scores";
             GameScoresbtn.TextAlign = ContentAlignment.MiddleLeft;
             GameScoresbtn.UseVisualStyleBackColor = true;
+            GameScoresbtn.Click += GameScoresbtn_Click;
             // 
             // Resultbtn
             // 

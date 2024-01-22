@@ -1,0 +1,13 @@
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\bin\Debug\net8.0\TicTacToe.Data.deps.json
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\bin\Debug\net8.0\TicTacToe.Data.dll
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\bin\Debug\net8.0\TicTacToe.Data.pdb
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.csproj.AssemblyReference.cache
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.AssemblyInfoInputs.cache
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.AssemblyInfo.cs
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.csproj.CoreCompileInputs.cache
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.sourcelink.json
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.dll
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\refint\TicTacToe.Data.dll
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\TicTacToe.Data.pdb
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToeData\obj\Debug\net8.0\ref\TicTacToe.Data.dll

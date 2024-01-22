@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "showresultsform";
+            dgv_gameScore = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgv_gameScore).BeginInit();
+            SuspendLayout();
+            // 
+            // dgv_gameScore
+            // 
+            dgv_gameScore.Anchor = AnchorStyles.None;
+            dgv_gameScore.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_gameScore.Location = new Point(78, 88);
+            dgv_gameScore.Name = "dgv_gameScore";
+            dgv_gameScore.Size = new Size(478, 221);
+            dgv_gameScore.TabIndex = 0;
+            // 
+            // showresultsform
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(687, 412);
+            Controls.Add(dgv_gameScore);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "showresultsform";
+            Text = "showresultsform";
+            Load += showresultsform_Load;
+            ((System.ComponentModel.ISupportInitialize)dgv_gameScore).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgv_gameScore;
     }
 }

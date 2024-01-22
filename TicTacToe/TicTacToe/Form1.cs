@@ -18,18 +18,23 @@ namespace TicTacToe
 
         private void Result_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void playbtn_Click(object sender, EventArgs e)
         {
-            Gameoptionpanel.Visible = true;
-            Resultoptionpanel.Visible = false;
+
+            if (Gameoptionpanel.Visible)
+                Gameoptionpanel.Visible = false;
+            else
+                Gameoptionpanel.Visible = true;
         }
         private void Resultbtn_Click(object sender, EventArgs e)
         {
-            Resultoptionpanel.Visible = true;
-            Gameoptionpanel.Visible = false;
+            if (Resultoptionpanel.Visible)
+                Resultoptionpanel.Visible = false;
+            else
+                Resultoptionpanel.Visible = true;
         }
 
         private void Singlebtn_Click(object sender, EventArgs e)
@@ -53,7 +58,9 @@ namespace TicTacToe
 
         }
 
-
-
+        private void GameScoresbtn_Click(object sender, EventArgs e)
+        {
+            openChaild(new showresultsform() );
+        }
     }
 }

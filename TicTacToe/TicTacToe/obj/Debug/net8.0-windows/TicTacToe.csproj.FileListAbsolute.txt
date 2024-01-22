@@ -52,3 +52,5 @@ E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\ref\TicTacToe.dll
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.Properties.Resources.resources
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.showresultsform.resources
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Data.dll
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Data.pdb
