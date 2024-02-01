@@ -1,6 +1,6 @@
 ﻿namespace TicTacToe
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,11 +38,13 @@
             Singlebtn = new Button();
             playbtn = new Button();
             logopanel = new FlowLayoutPanel();
-            bottomPanel = new Panel();
+            logo = new PictureBox();
             ActiveFormPanel = new Panel();
             sidepanel.SuspendLayout();
             Resultoptionpanel.SuspendLayout();
             Gameoptionpanel.SuspendLayout();
+            logopanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             SuspendLayout();
             // 
             // sidepanel
@@ -66,7 +68,7 @@
             Resultoptionpanel.Controls.Add(TopScorebtn);
             Resultoptionpanel.Controls.Add(GameScoresbtn);
             Resultoptionpanel.Dock = DockStyle.Top;
-            Resultoptionpanel.Location = new Point(0, 244);
+            Resultoptionpanel.Location = new Point(0, 345);
             Resultoptionpanel.Name = "Resultoptionpanel";
             Resultoptionpanel.Size = new Size(228, 64);
             Resultoptionpanel.TabIndex = 4;
@@ -108,7 +110,7 @@
             Resultbtn.FlatAppearance.BorderSize = 0;
             Resultbtn.FlatStyle = FlatStyle.Flat;
             Resultbtn.ForeColor = Color.Gainsboro;
-            Resultbtn.Location = new Point(0, 204);
+            Resultbtn.Location = new Point(0, 305);
             Resultbtn.Name = "Resultbtn";
             Resultbtn.Padding = new Padding(10, 0, 0, 0);
             Resultbtn.Size = new Size(228, 40);
@@ -123,7 +125,7 @@
             Gameoptionpanel.Controls.Add(TwoPlayerBtn);
             Gameoptionpanel.Controls.Add(Singlebtn);
             Gameoptionpanel.Dock = DockStyle.Top;
-            Gameoptionpanel.Location = new Point(0, 140);
+            Gameoptionpanel.Location = new Point(0, 241);
             Gameoptionpanel.Name = "Gameoptionpanel";
             Gameoptionpanel.Size = new Size(228, 64);
             Gameoptionpanel.TabIndex = 2;
@@ -137,11 +139,12 @@
             TwoPlayerBtn.Location = new Point(0, 31);
             TwoPlayerBtn.Name = "TwoPlayerBtn";
             TwoPlayerBtn.Padding = new Padding(35, 0, 0, 0);
-            TwoPlayerBtn.Size = new Size(228, 40);
+            TwoPlayerBtn.Size = new Size(228, 33);
             TwoPlayerBtn.TabIndex = 1;
             TwoPlayerBtn.Text = "Two Player";
             TwoPlayerBtn.TextAlign = ContentAlignment.MiddleLeft;
             TwoPlayerBtn.UseVisualStyleBackColor = true;
+            TwoPlayerBtn.Click += TwoPlayerBtn_Click;
             // 
             // Singlebtn
             // 
@@ -165,7 +168,7 @@
             playbtn.FlatAppearance.BorderSize = 0;
             playbtn.FlatStyle = FlatStyle.Flat;
             playbtn.ForeColor = Color.Gainsboro;
-            playbtn.Location = new Point(0, 100);
+            playbtn.Location = new Point(0, 201);
             playbtn.Name = "playbtn";
             playbtn.Padding = new Padding(10, 0, 0, 0);
             playbtn.Size = new Size(228, 40);
@@ -177,45 +180,47 @@
             // 
             // logopanel
             // 
+            logopanel.Controls.Add(logo);
             logopanel.Dock = DockStyle.Top;
             logopanel.Location = new Point(0, 0);
             logopanel.Name = "logopanel";
-            logopanel.Size = new Size(228, 100);
+            logopanel.Size = new Size(228, 201);
             logopanel.TabIndex = 1;
             // 
-            // bottomPanel
+            // logo
             // 
-            bottomPanel.BackColor = Color.FromArgb(138, 19, 18);
-            bottomPanel.Dock = DockStyle.Bottom;
-            bottomPanel.Location = new Point(228, 412);
-            bottomPanel.Name = "bottomPanel";
-            bottomPanel.Size = new Size(687, 68);
-            bottomPanel.TabIndex = 1;
+            logo.Image = Properties.Resources.images;
+            logo.Location = new Point(3, 3);
+            logo.Name = "logo";
+            logo.Size = new Size(222, 192);
+            logo.TabIndex = 0;
+            logo.TabStop = false;
             // 
             // ActiveFormPanel
             // 
-            ActiveFormPanel.BackColor = Color.FromArgb(130, 40, 40);
+            ActiveFormPanel.BackColor = Color.FromArgb(225, 211, 188);
             ActiveFormPanel.Dock = DockStyle.Fill;
             ActiveFormPanel.Location = new Point(228, 0);
             ActiveFormPanel.Name = "ActiveFormPanel";
-            ActiveFormPanel.Size = new Size(687, 412);
+            ActiveFormPanel.Size = new Size(687, 480);
             ActiveFormPanel.TabIndex = 2;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(915, 480);
             Controls.Add(ActiveFormPanel);
-            Controls.Add(bottomPanel);
             Controls.Add(sidepanel);
             Font = new Font("Microsoft Sans Serif", 10F);
             Margin = new Padding(4);
-            Name = "Form1";
+            Name = "MainForm";
             Text = "Form1";
             sidepanel.ResumeLayout(false);
             Resultoptionpanel.ResumeLayout(false);
             Gameoptionpanel.ResumeLayout(false);
+            logopanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             ResumeLayout(false);
         }
 
@@ -223,15 +228,15 @@
 
         private Panel sidepanel;
         private FlowLayoutPanel logopanel;
-        private Button playbtn;
-        private Panel Gameoptionpanel;
-        private Button Singlebtn;
-        private Button TwoPlayerBtn;
-        private Panel bottomPanel;
-        private Button Resultbtn;
+        private Panel ActiveFormPanel;
         private Panel Resultoptionpanel;
         private Button TopScorebtn;
         private Button GameScoresbtn;
-        private Panel ActiveFormPanel;
+        private Button Resultbtn;
+        private Panel Gameoptionpanel;
+        private Button TwoPlayerBtn;
+        private Button Singlebtn;
+        private Button playbtn;
+        private PictureBox logo;
     }
 }

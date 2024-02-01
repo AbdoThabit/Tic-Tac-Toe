@@ -806,6 +806,20 @@
           }
         }
       },
+      "TicTacToe.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.1.4",
+          "TicTacToe.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TicTacToe.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TicTacToe.Core.dll": {}
+        }
+      },
       "TicTacToe.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2210,6 +2224,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "TicTacToe.Core/1.0.0": {
+      "type": "project",
+      "path": "../TicTacToe.Core/TicTacToe.Core.csproj",
+      "msbuildProject": "../TicTacToe.Core/TicTacToe.Core.csproj"
+    },
     "TicTacToe.Data/1.0.0": {
       "type": "project",
       "path": "../TicTacToeData/TicTacToe.Data.csproj",
@@ -2219,6 +2238,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Microsoft.Data.SqlClient >= 5.1.4",
+      "TicTacToe.Core >= 1.0.0",
       "TicTacToe.Data >= 1.0.0"
     ]
   },
@@ -2249,6 +2269,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+            "E:\\ITI Projects\\TicTacToe\\TicTacToe\\TicTacToe.Core\\TicTacToe.Core.csproj": {
+              "projectPath": "E:\\ITI Projects\\TicTacToe\\TicTacToe\\TicTacToe.Core\\TicTacToe.Core.csproj"
+            },
             "E:\\ITI Projects\\TicTacToe\\TicTacToe\\TicTacToeData\\TicTacToe.Data.csproj": {
               "projectPath": "E:\\ITI Projects\\TicTacToe\\TicTacToe\\TicTacToeData\\TicTacToe.Data.csproj"
             }

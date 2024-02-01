@@ -37,7 +37,6 @@ E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\runtimes\
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.csproj.AssemblyReference.cache
-E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.Form1.resources
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.csproj.GenerateResource.cache
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.AssemblyInfoInputs.cache
@@ -54,3 +53,7 @@ E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.showresultsform.resources
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Data.dll
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Data.pdb
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Core.dll
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Core.pdb
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.MainForm.resources
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.PlayersInfo.resources

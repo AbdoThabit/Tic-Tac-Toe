@@ -21,7 +21,7 @@ namespace TicTacToe
 
         private void getData()
         {
-            DataTable dt = DbContext.Select("select p1.Name , p2.Name , g.[GID],g.[P1Score],g.[P2Score],g.[GameDate] from Player p1 join Game g on p1.id = g.P1id join player p2 on p2.id = g.P2id", "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True");
+            DataTable dt = DBContext.Select("select p1.Name , p2.Name , g.[GID],g.[P1Score],g.[P2Score],g.[GameDate] from Player p1 join Game g on p1.id = g.P1id join player p2 on p2.id = g.P2id", "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True");
             dgv_gameScore.DataSource = dt;
         }
 

@@ -1,8 +1,15 @@
 namespace TicTacToe
 {
-    public partial class Form1 : Form
+    public enum GameMode
     {
-        public Form1()
+        singlePlayer,
+        twoPlayers
+    }
+    public partial class MainForm : Form
+    {
+
+
+        public MainForm()
         {
             InitializeComponent();
             hideOpetionalPanelsAtStart();
@@ -37,12 +44,9 @@ namespace TicTacToe
                 Resultoptionpanel.Visible = true;
         }
 
-        private void Singlebtn_Click(object sender, EventArgs e)
-        {
 
-        }
         private Form ActiveForm = null;
-        private void openChaild(Form chaildForm)
+        public void openChaild(Form chaildForm)
         {
             if (ActiveForm != null) ActiveForm.Close();
 
@@ -60,7 +64,16 @@ namespace TicTacToe
 
         private void GameScoresbtn_Click(object sender, EventArgs e)
         {
-            openChaild(new showresultsform() );
+            openChaild(new showresultsform());
+        }
+        private void Singlebtn_Click(object sender, EventArgs e)
+        {
+            openChaild(new PlayersInfo(this, GameMode.singlePlayer));
+        }
+
+        private void TwoPlayerBtn_Click(object sender, EventArgs e)
+        {
+            openChaild(new PlayersInfo(this, GameMode.twoPlayers));
         }
     }
 }
