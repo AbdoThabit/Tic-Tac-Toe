@@ -57,3 +57,5 @@ E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\bin\Debug\net8.0-windows\TicTacToe.Core.pdb
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.MainForm.resources
 E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.PlayersInfo.resources
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.GameForm.resources
+E:\ITI Projects\TicTacToe\TicTacToe\TicTacToe\obj\Debug\net8.0-windows\TicTacToe.TopScoreForm_.resources

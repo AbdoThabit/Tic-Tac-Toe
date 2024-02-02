@@ -40,11 +40,13 @@
             logopanel = new FlowLayoutPanel();
             logo = new PictureBox();
             ActiveFormPanel = new Panel();
+            label1 = new Label();
             sidepanel.SuspendLayout();
             Resultoptionpanel.SuspendLayout();
             Gameoptionpanel.SuspendLayout();
             logopanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
+            ActiveFormPanel.SuspendLayout();
             SuspendLayout();
             // 
             // sidepanel
@@ -87,6 +89,7 @@
             TopScorebtn.Text = "Top Score";
             TopScorebtn.TextAlign = ContentAlignment.MiddleLeft;
             TopScorebtn.UseVisualStyleBackColor = true;
+            TopScorebtn.Click += TopScorebtn_Click;
             // 
             // GameScoresbtn
             // 
@@ -199,11 +202,23 @@
             // ActiveFormPanel
             // 
             ActiveFormPanel.BackColor = Color.FromArgb(225, 211, 188);
+            ActiveFormPanel.Controls.Add(label1);
             ActiveFormPanel.Dock = DockStyle.Fill;
             ActiveFormPanel.Location = new Point(228, 0);
             ActiveFormPanel.Name = "ActiveFormPanel";
             ActiveFormPanel.Size = new Size(687, 480);
             ActiveFormPanel.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Firebrick;
+            label1.Location = new Point(232, 216);
+            label1.Name = "label1";
+            label1.Size = new Size(236, 45);
+            label1.TabIndex = 2;
+            label1.Text = "Ready to Start !";
             // 
             // MainForm
             // 
@@ -221,6 +236,8 @@
             Gameoptionpanel.ResumeLayout(false);
             logopanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
+            ActiveFormPanel.ResumeLayout(false);
+            ActiveFormPanel.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -238,5 +255,6 @@
         private Button Singlebtn;
         private Button playbtn;
         private PictureBox logo;
+        private Label label1;
     }
 }

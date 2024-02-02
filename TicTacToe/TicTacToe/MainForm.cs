@@ -75,5 +75,10 @@ namespace TicTacToe
         {
             openChaild(new PlayersInfo(this, GameMode.twoPlayers));
         }
+
+        private void TopScorebtn_Click(object sender, EventArgs e)
+        {
+            openChaild(new TopScoreForm_());
+        }
     }
 }

@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using TicTacToe.Data;
 
 namespace TicTacToe.Core
@@ -22,6 +24,7 @@ namespace TicTacToe.Core
             string conString = "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True";
             return DBContext.isExited(cmdString, conString);
         }
+        
         public static int insertPlayer(string name)
         {
             string cmdString = $"insert into player values ('{capitalizeName(name)}',0)";
@@ -58,7 +61,33 @@ namespace TicTacToe.Core
 
 
         }
-        
+        public static DataTable getAllGamesResult()
+        {
+            string cmd = "select g.gid, p1.name as Player1Name ,g.P1Score as Player1Score, p2.name as player2Name ,g.P1Score as Player2Score ,g.GameDate from Player p1 join Game g on p1.Id = g.P1Id join Player p2 on p2.Id = g.P2Id";
+            string connectionString = "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True";
+            return DBContext.Select(cmd,connectionString);
+        }
+        public static void updateGametable(int score1,int score2,int id)
+        {
+            string cmd = $"update game set P1Score = {score1} ,P2Score = {score2} where gid = {id}";
+            string connectionString = "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True";
+
+            DBContext.ExecuteNonQuery(cmd, connectionString);
+        }
+        public static void deleteFromeGame( int id)
+        {
+            string cmd = $"delete from game where gid = {id}";
+            string connectionString = "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True";
+
+            DBContext.ExecuteNonQuery(cmd, connectionString);
+        }
+        public static DataTable getMaxScores()
+        {
+            string cmd = "SELECT name,Score FROM player where name != 'Computer' and Score != 0ORDER BY Score DESC ";
+            string connectionString = "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True";
+            return DBContext.Select(cmd, connectionString);   
+
+        }
     }
 }
 
