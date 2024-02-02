@@ -63,7 +63,7 @@ namespace TicTacToe.Core
         }
         public static DataTable getAllGamesResult()
         {
-            string cmd = "select g.gid, p1.name as Player1Name ,g.P1Score as Player1Score, p2.name as player2Name ,g.P1Score as Player2Score ,g.GameDate from Player p1 join Game g on p1.Id = g.P1Id join Player p2 on p2.Id = g.P2Id";
+            string cmd = "select g.gid, p1.name as Player1Name ,g.P1Score as Player1Score, p2.name as player2Name ,g.P2Score as Player2Score ,g.GameDate from Player p1 join Game g on p1.Id = g.P1Id join Player p2 on p2.Id = g.P2Id";
             string connectionString = "Server=.\\SQLEXPRESS;Database=TicTacToe;Trusted_Connection=True;TrustServerCertificate=True";
             return DBContext.Select(cmd,connectionString);
         }
